@@ -5,6 +5,7 @@
   --blackBg: #1a1a1a;
   --blackBg2: #1a1a1a;
   --grayText: #aaa;
+  --red: #E31E24;
 }
 
 *,
@@ -42,12 +43,28 @@ body {
     border-bottom: 1px solid #EAEAEA;
 }
 
+.navbar-logo {
+    width: 10rem;
+}
+
+.logo-chef {
+    width: 100%;
+}
+
+.nav-link {
+    font-family: 'Open Sans', sans-serif;
+}
+
 #navigation li {
 	padding: 0 10px;
 }
 
 #navigation li a {
-    color:#555;
+    color:var(--primary);
+}
+
+#navigation li a:hover {
+    color: var(--red);
 }
 
 .navbar-brand {
@@ -72,6 +89,41 @@ body {
     top: 0;
     border-bottom: 1px solid #EAEAEA;
 }
+
+
+/*---------------------------------------*/
+/*ABOUT*/
+/*---------------------------------------*/
+#about {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 5rem;
+    /* padding-bottom: 5rem; */
+    background-color:  #000;
+}
+
+.pictWidth {
+    max-width: 74rem;
+}
+
+.about-img {
+    width: 100%;
+}
+
+.about__header {
+    font-weight: 700;
+    font-size: 6.5rem; 
+    color: var(--grayText);
+    line-height: 1.7em;
+    text-transform: uppercase;
+}
+
+.about__desc {
+    font-weight: 600;
+    font-size: 2.2rem; 
+    color: #fff;
+    line-height: 1.4em;
+}
+
 
 /*---------------------------------------*/
 /*FOOTER*/
