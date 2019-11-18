@@ -17,8 +17,8 @@
 <body>
 
  
-  <!-- NAVBAR-->
-  <nav id="navigation" class="navbar navbar-expand-lg" >
+  <!-- NAVBAR -->
+  <nav id="navigation" class="navbar fixed-top navbar-expand-lg" >
     <div class="container">
         <!-- <a class="navbar-brand" href="#navigation">Logo</a> -->
         <div class="navbar-logo">
@@ -47,7 +47,7 @@
     </div>
   </nav>
 
-  <!-- HEADER-->
+  <!-- HEADER -->
   <div class="header">
     <div class="container">
       <div class="row">
@@ -65,17 +65,31 @@
     
   </div>
 
-  <!-- MENU-->
+  <!-- MENU -->
   <div id="menu">
-
+    
   </div>
 
-  <!-- GALLERY-->
+  <!-- GALLERY -->
   <div class="gallery">
+    <div class="container grid">
+      <div class="gallery__item gallery__item--1">
+        <img src="img/img1.png" alt="Image 1" class="gallery__img">
+      </div>
+      <div class="gallery__item gallery__item--2">
+        <img src="img/img2.png" alt="Image 2" class="gallery__img">
+      </div>
+      <div class="gallery__item gallery__item--3">
+        <img src="img/img3.png" alt="Image 3" class="gallery__img">
+      </div>
+      <div class="gallery__item gallery__item--4">
+        <img src="img/img4.jpg" alt="Image 4" class="gallery__img">
+      </div>
+    </div>
 
   </div>
 
-  <!-- ABOUT-->
+  <!-- ABOUT -->
   <div id="about">
     <div class="container blackBG">
       <div class="row">
@@ -93,13 +107,20 @@
     </div>
   </div>
 
-  <!-- CONTACT-->
+  <!-- CONTACT -->
   <div id="contact">
-
+    <h2 class="contact__header">Do you like<br>what you see?</h2>
+    <a href="#" class="btn btn-primary" role="button">Contact</a>
   </div>
 
-  
+  <!-- FOOTER -->
   <footer>
+    <div class="social-icons">
+      <a href="#" class="social-icon"><ion-icon name="logo-facebook"></ion-icon></a>
+      <a href="#" class="social-icon"><ion-icon name="logo-instagram"></ion-icon></a>
+      <a href="#" class="social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+    </div>
+    <p class="copy">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Chef Select. All rights reserved</p>
     <p class="attribution"> 
       Designed and Coded by <a href="https://www.lukenow.com"  target="_blank">lukenow.com</a>
     </p>
