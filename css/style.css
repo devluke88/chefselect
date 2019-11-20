@@ -26,7 +26,7 @@ html {
 body {
     font-size: 2rem;
     color: #29303b;
-    background-color: #fafafa;
+    background-color: #fff;
 }
 
 
@@ -92,12 +92,90 @@ body {
     border-bottom: 1px solid #EAEAEA;
 }
 
+/*---------------------------------------*/
+/*HEADER*/
+/*---------------------------------------*/
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 40px;
+}
+
+.header {
+    background-color: var(--blackBg);
+    margin-top: 12rem;
+    padding: 5rem 0;
+}
+
+.header__logo {
+  max-width: 60rem;
+}
+
+.header-img {
+    width: 100%;
+}
+
+.header__header2 {
+    font-weight: 700;
+    font-size: 2rem; 
+    color: var(--secondary);
+    text-transform: uppercase;
+}
+
+.header__header {
+    font-weight: 700;
+    font-size: 6.5rem; 
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.header__desc {
+    color: #fff;
+}
+
+.header__buttons {
+    display: flex;
+    flex-basis: auto;
+    justify-content: flex-start;
+}
+
+#red {
+    color: #fff;
+    border: 1px solid var(--red);
+    background-color: var(--red);
+}
+
+#transparent {
+    color: var(--red);
+    border: 1px solid var(--red);
+    background-color: var(--blackBg);
+    margin-left: 2rem;
+}
+
+#red:hover {
+    color: var(--red);
+    border: 1px solid var(--red);
+    background-color: var(--blackBg);
+}
+
+#transparent:hover {
+    color: #fff;
+    border: 1px solid var(--red);
+    background-color: var(--red);
+}
+
 
 /*---------------------------------------*/
 /*MENU*/
 /*---------------------------------------*/
 .gallery {
-    padding: 20rem 0 7rem 0;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10rem 0 15rem 0;
 }
 
 .grid {
@@ -105,6 +183,23 @@ body {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
     grid-gap: 15px;
+    margin-bottom: 3rem;
+}
+
+.menu__header2{
+    font-weight: 700;
+    font-size: 6.5rem; 
+    color: var(--primary);
+    line-height: 1em;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+}
+
+.menu__header3 {
+    font-weight: 700;
+    font-size: 2rem; 
+    color: var(--secondary);
+    text-transform: uppercase;
 }
 
 .gallery__img {
@@ -141,6 +236,14 @@ body {
     grid-row-end: 9;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.menu__desc {
+    text-align: left;
+}
+
 /*---------------------------------------*/
 /*ABOUT*/
 /*---------------------------------------*/
@@ -159,11 +262,19 @@ body {
     width: 100%;
 }
 
-.about__header {
+.about__header2 {
     font-weight: 700;
     font-size: 6.5rem; 
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.about__header3 {
+    font-weight: 700;
+    font-size: 2rem; 
     color: var(--grayText);
-    line-height: 1.7em;
     text-transform: uppercase;
 }
 
