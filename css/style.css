@@ -56,16 +56,17 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-#navigation li {
+.navbar li {
 	padding: 0 10px;
 }
 
-#navigation li a {
+.navbar li a {
     color:var(--primary);
     transition: all 0.4s;
+    font-weight: 600;
 }
 
-#navigation li a:hover {
+.navbar li a:hover {
     color: var(--red);
 }
 
@@ -169,6 +170,25 @@ body {
     background-color: var(--red);
 }
 
+.btn-red {
+    color: #fff;
+    border: 2px solid var(--red);
+    background-color: var(--red);
+}
+
+.btn-red:hover {
+    color: var(--red);
+    border: 2px solid var(--red);
+    background-color: #fff;
+}
+
+#white {
+    color: #fff;
+}
+
+#white:hover {
+    color: var(--red);
+}
 
 /*---------------------------------------*/
 /*MENU*/
@@ -244,12 +264,20 @@ body {
     text-align: left;
 }
 
+.gap {
+    margin-bottom: 3rem;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
 /*---------------------------------------*/
 /*ABOUT*/
 /*---------------------------------------*/
 #about {
     font-family: 'Open Sans', sans-serif;
-    padding-top: 5rem;
+    padding-top: 0rem;
     /* padding-bottom: 5rem; */
     background-color:  #000;
 }
@@ -285,6 +313,11 @@ body {
     line-height: 1.4em;
 }
 
+.extraPadding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
 
 /*---------------------------------------*/
 /*CONTACT*/
@@ -293,7 +326,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: var(--lime);
     text-align: center;
-    padding-top: 5rem;
     padding-bottom: 5rem;
 }
 .btn {
@@ -315,6 +347,14 @@ body {
     font-weight: 700;
     font-size: 3rem;
     margin-bottom: 2rem;
+}
+
+.contact--pictWidth {
+    max-width: 500px;
+}
+
+.contact-img {
+    width: 100%;
 }
 
 /*---------------------------------------*/
