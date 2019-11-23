@@ -29,8 +29,6 @@ body {
     background-color: #fff;
 }
 
-
-
 /*---------------------------------------*/
 /*NAVI*/
 /*---------------------------------------*/
@@ -195,7 +193,12 @@ body {
 /*---------------------------------------*/
 .gallery {
     font-family: 'Open Sans', sans-serif;
-    padding: 10rem 0 15rem 0;
+    /* padding: 10rem 0 15rem 0; */
+}
+
+#menu {
+    font-family: 'Open Sans', sans-serif;
+    padding: 5rem 0 15rem 0;
 }
 
 .grid {
@@ -318,7 +321,6 @@ body {
     padding-bottom: 3rem;
 }
 
-
 /*---------------------------------------*/
 /*CONTACT*/
 /*---------------------------------------*/
@@ -326,7 +328,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: var(--lime);
     text-align: center;
-    padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
 }
 .btn {
     font-size: 2rem;
@@ -349,12 +352,31 @@ body {
     margin-bottom: 2rem;
 }
 
-.contact--pictWidth {
+.contact__max {
     max-width: 500px;
 }
 
 .contact-img {
     width: 100%;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 2rem;
+}
+
+.flex-item1 {
+    align-self: flex-start;
+}
+
+.flex-item2 {
+    align-self: center;
+    padding: 2rem;
+}
+
+.flex-item3 {
+    align-self: flex-end;
 }
 
 /*---------------------------------------*/
@@ -376,4 +398,12 @@ footer {
 
 .social-icon:hover {
     color: var(--red);
+}
+
+.footer-logo {
+    width: 20rem;
+}
+
+.logo-white {
+    width: 100%;
 }
