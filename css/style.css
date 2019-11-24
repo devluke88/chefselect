@@ -95,20 +95,6 @@ body {
 /*HEADER*/
 /*---------------------------------------*/
 
-.flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-left: 40px;
-}
-
-.header {
-    background-color: var(--blackBg);
-    margin-top: 12rem;
-    padding: 5rem 0;
-}
-
 .header__logo {
   max-width: 60rem;
 }
@@ -117,27 +103,25 @@ body {
     width: 100%;
 }
 
-.header__header2 {
+.header--catering {
     font-weight: 700;
-    font-size: 2rem; 
     color: var(--secondary);
     text-transform: uppercase;
 }
 
-.header__header {
+.header--hero{
     font-weight: 700;
-    font-size: 6.5rem; 
     color: #fff;
     line-height: 1em;
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
 
-.header__desc {
+.header--desc {
     color: #fff;
 }
 
-.header__buttons {
+.header--buttons {
     display: flex;
     flex-basis: auto;
     justify-content: flex-start;
