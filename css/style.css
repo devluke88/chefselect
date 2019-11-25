@@ -95,6 +95,12 @@ body {
 /*HEADER*/
 /*---------------------------------------*/
 
+.header {
+    background-color: var(--blackBg);
+    margin-top: 12rem;
+    padding: 5rem 2rem;
+}
+
 .header__logo {
   max-width: 60rem;
 }
@@ -181,8 +187,10 @@ body {
 }
 
 #menu {
+    background-color: #F2F2F2;
     font-family: 'Open Sans', sans-serif;
-    padding: 5rem 0 15rem 0;
+    padding: 5rem 0 5rem 0;
+
 }
 
 .grid {
@@ -207,6 +215,10 @@ body {
     font-size: 2rem; 
     color: var(--secondary);
     text-transform: uppercase;
+}
+
+.gallery {
+    background-color: #F2F2F2;
 }
 
 .gallery__img {
