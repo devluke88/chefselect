@@ -161,7 +161,7 @@ body {
 .btn-red:hover {
     color: var(--red);
     border: 2px solid var(--red);
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 #white {

@@ -24,7 +24,9 @@
     }
 
     .header--catering {
-        font-size: 1.1rem; 
+        font-size: 1.2rem; 
+        letter-spacing: 0.1em;
+        padding-left: 0.2rem;
     }
     
     .header--hero{
@@ -32,7 +34,7 @@
     }
     
     .header--desc {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         margin-bottom: 3rem;
     }
     
@@ -48,10 +50,12 @@
     #red {
         flex: 1;
         margin-bottom: 2rem;
+        padding: 1rem;
     }
     
     #transparent {
         flex: 1;
+        padding: 1rem;
         margin-left: 0px;
     }
    
@@ -63,7 +67,7 @@
         padding: 5rem 1rem;
     }
 
-    .header-catering {
+    .header--catering {
         font-size: 2rem; 
     }
 
@@ -75,11 +79,37 @@
         font-size: 6.5rem; 
     }
 
+    .header-flex {
+        flex-direction: row;
+    }
+
+    .header__logo {
+        flex: 60%;
+    }
+
+    .header__box {
+        flex: 40%
+    }
+
+    .header--buttons {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .header--desc {
+        font-size: 2.4rem;
+    }
+
     .contact-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 2rem;
         height: 35rem;
+    }
+
+    #transparent {
+        margin-left: 2rem;
     }
 
     
