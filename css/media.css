@@ -1,15 +1,12 @@
 @media (min-width: 375px) {
-    .header {
-        background-color: var(--blackBg);
-        margin-top: 12rem;
-        padding: 5rem 2rem;
-    }
+  
 
     .header__logo {
         margin-bottom: 2rem;
     }
 
     .header-flex {
+        margin-top: 7rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -73,6 +70,7 @@
 
     .header__box {
         margin-left: 40px;
+        flex: 1;
     }
 
     .header--hero{
@@ -81,14 +79,17 @@
 
     .header-flex {
         flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
     }
 
     .header__logo {
-        flex: 60%;
+        flex: 1;
     }
 
     .header__box {
-        flex: 40%
+        flex: 1;
+        max-width: 70rem;
     }
 
     .header--buttons {
@@ -106,6 +107,10 @@
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 2rem;
         height: 35rem;
+    }
+
+    #red {
+        margin-bottom: 2rem;
     }
 
     #transparent {

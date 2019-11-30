@@ -96,17 +96,35 @@ body {
 /*---------------------------------------*/
 
 .header {
-    background-color: var(--blackBg);
+    /* background-color: var(--blackBg); */
+    /* background-image: url("../img/img-hero.jpg"); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../img/img-hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     margin-top: 12rem;
     padding: 5rem 2rem;
+    height: 50vh;
 }
 
+/* .header--container {
+    margin: 0 auto;
+    width: 80%;
+} */
+
 .header__logo {
-  max-width: 60rem;
+    max-width: 100%;
+  /* max-width: 60rem; */
+  flex: 1;
 }
 
 .header-img {
     width: 100%;
+}
+
+.header__box {
+    flex: 1;
 }
 
 .header--catering {
@@ -146,7 +164,7 @@ body {
 #transparent {
     color: var(--red);
     border: 1px solid var(--red);
-    background-color: var(--blackBg);
+    background-color: transparent;
     margin-left: 0rem;
 }
 
@@ -201,8 +219,8 @@ body {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
-    grid-gap: 15px;
-    margin-bottom: 3rem;
+    grid-gap: 10px;
+    /* margin-bottom: 3rem; */
 }
 
 .menu__header2{
@@ -211,7 +229,6 @@ body {
     color: var(--primary);
     line-height: 1em;
     text-transform: uppercase;
-    margin-bottom: 5rem;
 }
 
 .menu__header3 {
