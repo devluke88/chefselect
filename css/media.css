@@ -62,6 +62,7 @@
 
     .header {
         padding: 5rem 1rem;
+        height: 70vh;
     }
 
     .header--catering {
@@ -117,5 +118,14 @@
         margin-left: 2rem;
     }
 
-    
+    .footer__box {
+        flex-direction: row;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .flinks {margin-right: 2.5rem;}
 }
