@@ -208,4 +208,10 @@
         align-items: flex-start;
     }
     .flinks {margin-right: 2.5rem;}
+
+    .main--testimonials {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 3.8rem;
+    }
 }
