@@ -1,6 +1,5 @@
 @media (min-width: 375px) {
   
-
     .header__logo {
         margin-bottom: 2rem;
     }
@@ -133,7 +132,6 @@
         grid-row-end: 9;
     }
     
-
     .header {
         padding: 5rem 1rem;
         height: 70vh;
@@ -156,6 +154,7 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-end;
+        padding-top: 10rem;
     }
 
     .header__logo {
