@@ -1,278 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Chef Select | Classic & Modern Cuisine</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/media.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet"> 
-  <link rel="icon" type="image/jpg" sizes="32x32" href="./img/favicon-32x32.jpg">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet"> 
+  <title>Chef Select | Home</title>
+
 </head>
 <body>
-
-  <!-- NAVBAR -->
-  <nav id="navigation" class="navbar navbar-expand-lg" >
-    <div class="container">
-        <!-- <a class="navbar-brand" href="#navigation">Logo</a> -->
-        <div class="navbar-logo">
-          <a href="index.html"><img src="img/chefLogo.svg" alt="logo" class="logo-chef"></a>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#menu">Menu</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-                <a id="white" class="nav-link btn btn-red" href="#contact">Contact</a>
-            </li> 
-            </ul>
-        </div>
+<!-- NAV -->
+  <nav class="navbar">
+    <div class="social-icons">
+      <a href="#" class="social-icon"><ion-icon name="logo-facebook"></ion-icon></a>
+      <a href="#" class="social-icon"><ion-icon name="logo-instagram"></ion-icon></a>
+      <a href="#" class="social-icon"><ion-icon name="mail"></ion-icon></a>
     </div>
+    <div class="logo">
+      <img src="images/logo-white.png" class="nav-logo">
+    </div>
+    
+    <ul class="nav-items">
+      <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+    </ul>
   </nav>
 
-  <!-- HEADER -->
-  <div class="header">
-    <div class="container">
-      <div class="row header-flex">
-        <div class="header__box">
-          <h2 class="header--catering"><span class="badge badge-danger">Catering & Events</span></h2>
-          <h1 class="header--hero">Food you will remeber!</h1>
-          <p class="header--desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci obcaecati quos sapiente delectus id ratione.</p>
-          <div class="header--buttons">
-            <a href="#menu" id="red" class="btn btn-primary" role="button">See Menu</a>
-            <a href="#contact" id="transparent" class="btn btn-primary" role="button">Contact</a>
-          </div>
-        </div>
-      </div>
-    </div>   
+<!-- HERO -->
+<div class="hero">
+  <h1 class="hero-h1">Chef Select</h1>
+  <p class="hero-desc">Food you will remember.</p>
+  <div class="hero-cta">
+    <a href="#" class="btn btn-white">See Menu</a>
+    <a href="#" class="btn btn-transparent">Contact</a>
   </div>
+  <div class="hero-image">
+    <img src="images/hero-image.png" alt="Hero Image" class="hero-img">
+  </div>
+</div>
 
-  <!-- MENU -->
-  <div id="menu">
-    <div class="container">
-      <h3 class="menu__header3"><span class="badge badge-secondary">Classic & Modern</span></h3>
-      <h2 class="menu__header2">MENU</h2>
-    </div>
-    <div class="container">
-      <div class="row padding-top">
-        <div class="col-md-4">
-          <div class="card gap shadow-sm border-0 rounded" >
-            <a href="#" class="card-overlay"><img src="img/starters.jpg" class="card-img-top" alt="starter"></a>
-            <div class="card-body">
-              <h2 class="card-title">Starters</h2>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card gap shadow-sm border-0">
-            <a href="#" class="card-overlay"><img src="img/mains.jpg" class="card-img-top" alt="starter"></a>
-            <div class="card-body">
-              <h2 class="card-title">Mains</h2>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card gap shadow-sm border-0" >
-            <a href="#" class="card-overlay"><img src="img/desserts.jpg" class="card-img-top" alt="starter"></a>
-            <div class="card-body">
-              <h2 class="card-title">Desserts</h2>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>  
+<!-- MENU-INTRO-->
+<div class="menu">
+  <h2 class="menu-h2">Menu</h2>
+  <p class="menu-desc">Some description</p>
+  <div class="menu-box">
+    <div class="menu-box__card">
+      <div class="menu-image">
+        <img src="images/menu-mains.png" alt="Menu dish" class="menu-img">
       </div>
+      <h3 class="menu-card-desc">Starter</h3>
+    </div>
+    <div class="menu-box__card">
+      <div class="menu-image">
+        <img src="images/menu-mains.png" alt="Menu dish" class="menu-img">
+      </div>
+      <h3 class="menu-card-desc">Mains</h3>
+    </div>
+    <div class="menu-box__card">
+      <div class="menu-image">
+        <img src="images/menu-mains.png" alt="Menu dish" class="menu-img">
+      </div>
+      <h3 class="menu-card-desc">Dessert</h3>
     </div>
   </div>
+</div>
+ 
+<!-- FOOTER -->
+  <footer class="footer">
 
-  <!-- GALLERY -->
-  <div class="gallery">
-    <div class="container text-center">
-      <h2 class="gallery__header">Gallery</h2>
-      <p class="gallery__desc">Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam fuga quod porro temporibus hic placeat eius est dolores error, molestias, nam beatae modi corporis quisquam non corrupti illum quidem autem?</p>
-    </div>
-    <div class="grid">
-        <div class="gallery__item gallery__item--1">
-          <img src="img/gal1.JPG" alt="Image 1" class="gallery__img">
-        </div>
-        <div class="gallery__item gallery__item--2">
-          <img src="img/gal2.jpg" alt="Image 2" class="gallery__img">
-        </div>
-        <div class="gallery__item gallery__item--3">
-          <img src="img/gal3.JPG" alt="Image 3" class="gallery__img">
-        </div>
-        <div class="gallery__item gallery__item--4">
-          <img src="img/gal4.jpg" alt="Image 4" class="gallery__img">
-        </div>
-        <div class="gallery__item gallery__item--5">
-          <img src="img/gal5.JPG" alt="Image 1" class="gallery__img">
-        </div>
-        <div class="gallery__item gallery__item--6">
-          <img src="img/gal6.jpg" alt="Image 2" class="gallery__img">
-        </div>
-        <div class="gallery__item gallery__item--7">
-          <img src="img/gal7.jpg" alt="Image 3" class="gallery__img">
-        </div>
-      </div>
-  </div>
-
-  <!-- ABOUT -->
-  <div id="about">
-    <div class="container blackBG">
-        <div class="row">
-          <div class="col-md-6 extraPadding">
-              <h3 class="about__header3"><span class="badge badge-secondary">About</span></h3>
-              <h2 class="about__header2">Chef Select</h2>
-              <p class="about__desc">Looking at the concept, Classic and Modern, aim to please all the people with more styles of cooking. From classic dishes and keeping them like that, or using just a modern style  of cooking, until applying the whole concept style of cooking, Classic and Modern, bringing classic dishes to a modern view.</p>
-          </div>
-          <div class="col-md-6 pictWidth">
-            <img src="img/gabriel3.png" alt="about" class="about-img">
-          </div>
-        </div>
-    </div>
-    <div class="container blackBG">
-      <div class="row">
-        <div class="col-md-6 pictWidth extraPadding">
-          <img src="img/gabriel.png" alt="about" class="about-img">
-        </div>
-        <div class="col-md-6">
-            <h3 class="about__header3"><span class="badge badge-secondary">About Chef</span></h3>
-            <h2 class="about__header2">Gabriel</h2>
-            <p class="about__desc">A chef who would like to cook classic and modern for public. A vast experience in gastronomy, 18 years working in different locations like hotels, restaurants, pubs, bistros, glad to show to the people his abilities of cooking. Continuously willing to make people smiling with a fresh creativity and a fairy tale taste of the food and entertaining the public with successful events. Gabriel is able to do weddings, receptions, private parties with live cooking stations, live barbecues, buffets, take away finger food and canapes on a high level of cooking.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- TESTIMONIALS -->
-  <div class="testimonials-section overlay">
-    <div class="container">
-        <div class="main--testimonials">
-            <blockquote class="testimonials">
-              <ion-icon name="quote"></ion-icon>
-              <p class="testimonials__desc">Our wedding cake was made by this extremely passionate chef. A  tasty and beautiful cake, a truly special cake for our special day. Totally recommended for any sort of event. </p>
-              <cite>
-                  <ion-icon name="star" class="icon-small"></ion-icon>
-                  <ion-icon name="star" class="icon-small"></ion-icon>
-                  <ion-icon name="star" class="icon-small"></ion-icon>
-                  <ion-icon name="star" class="icon-small"></ion-icon>
-                  <ion-icon name="star" class="icon-small"></ion-icon>  
-              </cite>
-              <div class="testimonials__author">
-                <img src="img/gabriel2.png" alt="Profile no 1" class="testimonials__img" width="26px" height="26px">
-                <div class="author">
-                  <strong class="name">Sorin Munteanu</strong> 
-                </div>
-              </div>
-            </blockquote>
-            <blockquote class="testimonials">
-                <ion-icon name="quote"></ion-icon>
-                <p class="testimonials__desc">We hired Chef select for our baby daughter christening party and most guests were speechless when food time came. Fantastic range and fast reliable service. definitely recommend to anyone.</p>
-                <cite>
-                    <ion-icon name="star" class="icon-small"></ion-icon>
-                    <ion-icon name="star" class="icon-small"></ion-icon>
-                    <ion-icon name="star" class="icon-small"></ion-icon>
-                    <ion-icon name="star" class="icon-small"></ion-icon>
-                    <ion-icon name="star" class="icon-small"></ion-icon> 
-                </cite>
-                <div class="testimonials__author">
-                  <img src="img/gabriel2.png" alt="Profile no 2" class="testimonials__img" width="26px" height="26px">
-                  <div class="author">
-                    <strong class="name">Bacos Lucian Konrad</strong> 
-                  </div>
-                </div>
-            </blockquote>
-            <blockquote class="testimonials">
-                <ion-icon name="quote"></ion-icon>
-                <p class="testimonials__desc">Great professionalism! Would definitely recommend.</p>
-                    <cite>
-                        <ion-icon name="star" class="icon-small"></ion-icon>
-                        <ion-icon name="star" class="icon-small"></ion-icon>
-                        <ion-icon name="star" class="icon-small"></ion-icon>
-                        <ion-icon name="star" class="icon-small"></ion-icon>
-                        <ion-icon name="star" class="icon-small"></ion-icon> 
-                    </cite>
-                <div class="testimonials__author">
-                  <img src="img/gabriel2.png" alt="Profile no 3" class="testimonials__img" width="26px" height="26px">
-                  <div class="author">
-                    <strong class="name">Cristi Si Mihaela Zota</strong> 
-                  </div>
-                </div>
-            </blockquote>
-          </div>
-    </div>
-  </div>
-
-  <!-- CONTACT -->
-  <div id="contact">
-    <div class="contact-grid">
-      <div class="flex-item1 contact__max">
-        <img src="img/contact1.png" alt="cake" class="contact-img">
-      </div>
-      <div class="flex-item2">
-        <h2 class="contact__header">Do you like<br>what you see?</h2>
-        <a href="mailto:mychefselect@gmail.com" class="btn btn-primary" role="button">Contact</a>
-      </div>
-      <div class="flex-item3 contact__max">
-        <img src="img/contact2.png" alt="cake" class="contact-img">
-      </div>
-    </div>  
-  </div>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-     
-      <div class="footer__box">
-        <div class="footer-logo">
-          <a href="index.html"><img src="img/logo-white.png" alt="logo" class="logo-white"></a>
-        </div>
-       
-        <div class="footer-contact">
-          <span><ion-icon name="call" class="fimg"></ion-icon><a href="tel:07474 878369">07474 878369</a></span>
-          <span><ion-icon name="mail" class="fimg"></ion-icon><a href="mailto:mychefselect@gmail.com">mychefselect@gmail.com</a></span>
-        </div>
-
-        <div class="footer-menu">
-          <a href="index.html" class="flinks">Home</a>
-          <a href="#menu" class="flinks">Menu</a>
-          <a href="#about" class="flinks">About</a>
-        </div>
-        
-        <div class="social-icons">
-          <a href="https://www.facebook.com/mychefselect/" class="social-icon" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
-          <a href="#" class="social-icon"><ion-icon name="logo-instagram"></ion-icon></a>
-          <a href="#" class="social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
-        </div>
-
-    </div>
-      <p class="copy">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Chef Select. All rights reserved.</p>
-      <p class="attribution"> 
-        Designed and Coded by <a href="https://www.lukenow.com"  target="_blank">lukenow.com</a>
-      </p>
-    </div>
+      Coded by <a href="http://www.lukenow.com">lukenow.com</a>.
   </footer>
 
-<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>

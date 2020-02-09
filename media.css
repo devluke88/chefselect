@@ -1,0 +1,58 @@
+:root {
+  /*Primary*/
+  --Dark-Violet: hsl(256, 26%, 20%);
+  --Grayish-Blue: hsl(216, 30%, 68%);
+  /*Neutral*/
+  --Very-Dark-Violet: hsl(270, 9%, 17%);
+  --Dark-Grayish-Violet: hsl(273, 4%, 51%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+@media (min-width: 375px) {
+
+   
+}
+
+@media (min-width: 768px) {
+
+    .navbar {
+        align-items: center;
+        margin: 0 auto;
+        width: 86.67%;
+        flex-direction: row;
+      }
+
+      .hero-image {
+        max-width: 60rem;
+        margin-bottom: 9rem;
+      }
+
+      .menu-box {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+}
+
+@media (min-width: 1024px) {
+       
+    .navbar {
+        max-width: 86.67%;
+    }
+
+    .hero-h1 {
+        font-size: 3rem;
+      }
+    .hero-desc {
+        margin: 0 auto;
+        font-size: 8rem;
+        max-width: 680px;
+        line-height: 1em;
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
+    
+    
+
+}
