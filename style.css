@@ -143,9 +143,22 @@ body {
   text-align: center;
 }
 
+.menu-h2 {
+  padding-top: 9rem;
+  color: #fff;
+  font-size: 5rem;
+}
+
+.menu-desc {
+  color: #fff;
+  font-size: 3rem;
+  padding-bottom: 9rem;
+}
+
 .menu-box {
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 5rem;
 }
 
 .menu-image {
@@ -163,6 +176,14 @@ body {
 .menu-box {
   display: flex;
   flex-direction: column;
+}
+
+.menu-card-desc {
+  font-size: 4rem;
+}
+
+.menu-cta {
+  padding-bottom: 9rem;
 }
 
 
