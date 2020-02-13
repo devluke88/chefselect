@@ -33,6 +33,18 @@
         flex-direction: row;
         justify-content: space-around;
       }
+
+      .about {
+        flex-direction: row;
+      }
+
+      .about-box {
+        flex: 1;
+      }
+
+      .about-image {
+        flex: 1;
+      }
 }
 
 @media (min-width: 1024px) {
