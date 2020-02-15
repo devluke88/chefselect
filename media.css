@@ -1,10 +1,10 @@
 :root {
   /*Primary*/
-  --Dark-Violet: hsl(256, 26%, 20%);
-  --Grayish-Blue: hsl(216, 30%, 68%);
+  --Primary-Black: #0F1015;
+  --Secondary-Black: #0A0B0F;
   /*Neutral*/
-  --Very-Dark-Violet: hsl(270, 9%, 17%);
-  --Dark-Grayish-Violet: hsl(273, 4%, 51%);
+  --Primary-Gray: #ACACAC;
+  --Nav-Gray: #a2a2a2;
   --Very-Light-Gray: hsl(0, 0%, 98%);
 }
 
@@ -15,17 +15,49 @@
 
 @media (min-width: 768px) {
 
-    .navbar {
-        align-items: center;
-        margin: 0 auto;
-        width: 86.67%;
-        flex-direction: row;
-      }
-
+  /*HERO*/
+  .hero-h1 {
+    font-size: 2.8rem;
+  }
+  
+  .hero-desc {
+    font-size: 6rem;
+    max-width: 500px;
+  }
       .hero-image {
         max-width: 60rem;
         margin-bottom: 9rem;
       }
+
+      .hero-cta {
+        max-width: 30rem;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .btn {
+        font-size: 2rem; 
+      }
+
+      .btn-white {
+        margin-right: 1rem;
+      }
+      
+      .btn-transparent {
+        margin-left: 1rem;
+      }
+
+
+    /*MENU*/
+
+    .menu-h2 {
+      font-size: 4rem;
+    }
+    
+    .menu-desc {
+      font-size: 2.6rem;
+    }
+
 
       .menu-box {
         margin: 0 auto;
@@ -49,13 +81,14 @@
 
 @media (min-width: 1024px) {
        
-    .navbar {
+    /* .navbar {
         max-width: 86.67%;
-    }
+    } */
 
     .hero-h1 {
         font-size: 3rem;
       }
+
     .hero-desc {
         margin: 0 auto;
         font-size: 8rem;
@@ -63,6 +96,14 @@
         line-height: 1em;
         font-weight: 500;
         margin-bottom: 2rem;
+    }
+
+    .menu-h2 {
+      font-size: 5rem;
+    }
+    
+    .menu-desc {
+      font-size: 2.6rem;
     }
     
     
