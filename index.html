@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="navbar.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet"> 
   <title>Chef Select | Home</title>
@@ -12,23 +13,30 @@
 </head>
 <body>
 <!-- NAV -->
-  <nav class="navbar">
-    <div class="social-icons">
-      <a href="#" class="social-icon"><ion-icon name="logo-facebook"></ion-icon></a>
-      <a href="#" class="social-icon"><ion-icon name="logo-instagram"></ion-icon></a>
-      <a href="#" class="social-icon"><ion-icon name="mail"></ion-icon></a>
+  <header id="luxbar" class="luxbar-fixed">
+    <div class="nav-container">
+      <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
+      <div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
+          <ul class="luxbar-navigation">
+              <li class="luxbar-header">
+                <a href="index.html"><img src="images/logo-white.svg" class="nav-logo"></a>
+                <label class="luxbar-hamburger luxbar-hamburger-spin" 
+                  id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
+              </li>
+              <li class="luxbar-item" id="lux"><a href="#">Home</a></li>
+              <li class="luxbar-item" id="lux"><a href="#">Menu</a></li>
+              <li class="luxbar-item" id="lux"><a href="#">About</a></li>
+              <li class="luxbar-item" id="lux"><a href="#">Contact</a></li>
+              <li class=""><div class="social-icons">
+                <a href="#" class="social-icon"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#" class="social-icon"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#" class="social-icon"><ion-icon name="mail"></ion-icon></a>
+              </div></li>
+          </ul>
+      </div>
     </div>
-    <div class="logo">
-     <a href="index.html"><img src="images/logo-white.png" class="nav-logo"></a>
-    </div>
-    
-    <ul class="nav-items">
-      <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-    </ul>
-  </nav>
+  </header>
+
 
 <!-- HERO -->
 <div class="hero">
@@ -46,26 +54,36 @@
 <!-- MENU-INTRO-->
 <div class="menu">
   <h2 class="menu-h2">Menu</h2>
-  <p class="menu-desc">Some description</p>
+  <p class="menu-desc">Outstanding is not enough.</p>
   <div class="menu-box">
-    <div class="menu-box__card">
-      <div class="menu-image">
-        <img src="images/menu-starters.png" alt="Menu dish" class="menu-img">
+    
+    <a href="#" class="menu-link">
+      <div class="menu-box__card">
+        <div class="menu-image">
+          <img src="images/menu-starters.png" alt="Menu dish" class="menu-img">
+        </div>
+        <h3 class="menu-card-desc">Starters</h3>
       </div>
-      <h3 class="menu-card-desc">Starter</h3>
-    </div>
-    <div class="menu-box__card">
-      <div class="menu-image">
-        <img src="images/menu-mains.png" alt="Menu dish" class="menu-img">
+    </a>
+
+    <a href="#" class="menu-link">
+      <div class="menu-box__card">
+        <div class="menu-image">
+          <img src="images/menu-mains.png" alt="Menu dish" class="menu-img">
+        </div>
+        <h3 class="menu-card-desc">Mains</h3>
       </div>
-      <h3 class="menu-card-desc">Mains</h3>
-    </div>
-    <div class="menu-box__card">
-      <div class="menu-image">
-        <img src="images/menu-desserts.png" alt="Menu dish" class="menu-img">
+    </a>
+
+    <a href="#" class="menu-link">
+      <div class="menu-box__card">
+        <div class="menu-image">
+          <img src="images/menu-desserts.png" alt="Menu dish" class="menu-img">
+        </div>
+        <h3 class="menu-card-desc">Desserts</h3>
       </div>
-      <h3 class="menu-card-desc">Dessert</h3>
-    </div>
+    </a>
+    
   </div>
   <div class="menu-cta">
     <a href="#" class="btn btn-transparent">View More</a>
@@ -92,6 +110,17 @@
       Coded by <a href="http://www.lukenow.com">lukenow.com</a>.
   </footer>
 
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>
