@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../media.css">
+  <link rel="stylesheet" href="../navbar.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet"> 
+  <title>Chef Select | Menu</title>
+
+</head>
+<body>
+<!-- NAV -->
+  <header id="luxbar" class="luxbar-fixed">
+    <div class="nav-container">
+      <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
+      <div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
+          <ul class="luxbar-navigation">
+              <li class="luxbar-header">
+                <a href="../index.html"><img src="../images/logo-white.svg" class="nav-logo"></a>
+                <label class="luxbar-hamburger luxbar-hamburger-spin" 
+                  id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
+              </li>
+              <li class="luxbar-item" id="lux"><a href="../index.html">Home</a></li>
+              <li class="luxbar-item" id="lux"><a href="../pages/menu.html">Menu</a></li>
+              <li class="luxbar-item" id="lux"><a href="../pages/about.html">About</a></li>
+              <li class="luxbar-item" id="lux"><a href="../pages/contact.html">Contact</a></li>
+              <li class=""><div class="social-icons">
+                <a href="https://www.facebook.com/mychefselect/" class="social-icon" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#" class="social-icon" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="mailto:mychefselect@gmail.com" class="social-icon" target="_blank"><ion-icon name="mail"></ion-icon></a>
+              </div></li>
+          </ul>
+      </div>
+    </div>
+  </header>
+
+
+<!-- CONTACT PAGE -->
+<div class="contact-page">
+  <div class="contact-box">
+    <div class="contact-wrapper">
+      <h1 class="contact-h1">Contact</h1>
+      <p class="contact-desc2">Get in touch
+        <br> I'd love to hear from you
+        <br>
+        <a href="mailto:mychefselect@gmail.com" class="mail-style">mychefselect@gmail.com</a>
+        <br>
+        <a href="tel:07474 878369" class="tel">07474 878369</a>
+      </p>
+    </div>
+    <div class="contact-image2">
+      <img src="../images/contact_img2.jpg" alt="Contact Image" class="contact-img2">
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-box">
+      <div class="footer-logo">
+        <a href="../index.html"><img src="../images/logo-original.svg" alt="Original Logo" class="footer-img"></a>
+      </div>
+      <p class="copy">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Chef Select. All rights reserved.</p>
+      <p class="attribution"> 
+        Designed and Coded by <a href="https://www.lukenow.com"  target="_blank" class="luke">lukenow.com</a>
+      </p>
+    </div>
+  </footer>
+
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
