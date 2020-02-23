@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../media.css">
+  <link rel="stylesheet" href="../navbar.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet"> 
+  <title>Chef Select | Menu</title>
+
+</head>
+<body>
+<!-- NAV -->
+  <header id="luxbar" class="luxbar-fixed">
+    <div class="nav-container">
+      <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
+      <div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
+          <ul class="luxbar-navigation">
+              <li class="luxbar-header">
+                <a href="index.html"><img src="../images/logo-white.svg" class="nav-logo"></a>
+                <label class="luxbar-hamburger luxbar-hamburger-spin" 
+                  id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
+              </li>
+              <li class="luxbar-item" id="lux"><a href="../index.html">Home</a></li>
+              <li class="luxbar-item" id="lux"><a href="../pages/menu.html">Menu</a></li>
+              <li class="luxbar-item" id="lux"><a href="../pages/about.html">About</a></li>
+              <li class="luxbar-item" id="lux"><a href="../pages/contact.html">Contact</a></li>
+              <li class=""><div class="social-icons">
+                <a href="https://www.facebook.com/mychefselect/" class="social-icon" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#" class="social-icon" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="mailto:mychefselect@gmail.com" class="social-icon" target="_blank"><ion-icon name="mail"></ion-icon></a>
+              </div></li>
+          </ul>
+      </div>
+    </div>
+  </header>
+
+<nav class="menu-navbar">
+    <a href="#" class="menu-nav-item">Starters</a><span> | </span>
+    <a href="#" class="menu-nav-item">Mains</a><span> | </span>
+    <a href="#" class="menu-nav-item">Desserts</a>
+</nav>
+<!-- MENU PAGE -->
+<div class="menu-page">
+  <h1 class="menu-main_header">Menu</h1>
+  <p class="menu-main-desc">Classic and Modern</p>
+  <div class="menu-page-starters">
+
+    <div class="menu-box1 soup">
+      <img src="../images/starters-image.png" alt="starters" class="manu-img">
+    </div>
+    <div class="menu-box2">
+      <h2 class="menu-header2">Starters</h2>
+      <p class="menu-desc2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum laborum blanditiis amet quaerat obcaecati nesciunt placeat magnam ex, omnis enim provident repellat commodi esse eum nihil quisquam ab? Cupiditate, iste!</p>
+      <div class="menu-button">
+        <a href="../pages/menu-folder/starters.html" class="menu-link">See more</a>
+      </div>
+    </div>
+
+    <div class="menu-box2">
+      <h2 class="menu-header2">Mains</h2>
+      <p class="menu-desc2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum laborum blanditiis amet quaerat obcaecati nesciunt placeat magnam ex, omnis enim provident repellat commodi esse eum nihil quisquam ab? Cupiditate, iste!</p>
+      <div class="menu-button">
+        <a href="../pages/menu-folder/starters.html" class="menu-link">See more</a>
+      </div>
+    </div>
+    <div class="menu-box1 avocado">
+      <img src="../images/mains-image.png" alt="starters" class="manu-img">
+    </div>
+
+    <div class="menu-box1 raspberry">
+      <img src="../images/desserts-image.png" alt="starters" class="manu-img">
+    </div>
+    <div class="menu-box2">
+      <h2 class="menu-header2">Desserts</h2>
+      <p class="menu-desc2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum laborum blanditiis amet quaerat obcaecati nesciunt placeat magnam ex, omnis enim provident repellat commodi esse eum nihil quisquam ab? Cupiditate, iste!</p>
+      <div class="menu-button">
+        <a href="../pages/menu-folder/starters.html" class="menu-link">See more</a>
+      </div>
+    </div>
+    
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-box">
+      <div class="footer-logo">
+        <a href="../index.html"><img src="../images/logo-original.svg" alt="Original Logo" class="footer-img"></a>
+      </div>
+      <p class="copy">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Chef Select. All rights reserved.</p>
+      <p class="attribution"> 
+        Designed and Coded by <a href="https://www.lukenow.com"  target="_blank" class="luke">lukenow.com</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
