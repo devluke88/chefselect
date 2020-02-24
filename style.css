@@ -637,4 +637,55 @@ body {
 .raspberry {
   background-color:#F2BEC8;
 }
+
+/*NAV 2*/
+.menu-navbar {
+  color: var(--Primary-Black);
+  margin: 0 auto;
+  margin-top: 7.5rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.menu-nav-item {
+  text-decoration: none;
+  color: var(--Primary-Black);
+}
   
+/* STARTERS PAGE */
+
+.starters-section {
+  background-color: #fff;
+}
+
+.starters-hero {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding-top: 9rem;
+  margin-bottom: 9rem;
+}
+
+.starters-img-hero {
+  width: 100%;
+}
+
+.starters-header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.starters-h1 {
+  color: var(--Primary-Gray);
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+.starters-desc {
+  color: var(--Primary-Black);
+  font-size: 10rem;
+  font-weight: 900;
+}
+
+.full-bowl-img {
+  width: 100%;
+}
