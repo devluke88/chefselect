@@ -8,11 +8,6 @@
   --Very-Light-Gray: hsl(0, 0%, 98%);
 }
 
-/*Headings
-  font-family: 'DM Serif Display', serif;
-  Weights: 400
-*/
-
 *,
 *::after,
 *::before {
@@ -34,7 +29,9 @@ body {
   background-color: var(--Primary-Black);
 }
 
+
 /*NAV*/
+
 #lux {
   font-size: 2rem;
 }
@@ -57,6 +54,7 @@ body {
 .social-icon:hover {
   color: var(--Nav-Gray);
 }
+
 #luxbar {
   background-color: var(--Primary-Black);
 }
@@ -67,13 +65,6 @@ body {
   max-width: 1185px;
 }
 
-/* .logo {
-  width: 10rem;
-  flex: 1;
-  display: flex;
-  justify-content:  center;
-} */
-
 .nav-logo { 
   width: 40px;
   margin-left: 26px;
@@ -83,26 +74,9 @@ body {
   margin-right: 26px;
 }
 
-/* .nav-items {
-  list-style: none;
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.nav-link {
-  text-decoration: none;
-  margin-left: 2rem;
-  color: #fff;
-  transition: all 0.4s ease;
-}
-
-.nav-link:hover {
-  color: var(--Nav-Gray);
-} */
-
 
 /* HERO */
+
 .hero {
   margin-top: 10rem;
   text-align: center;
@@ -205,8 +179,14 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 .menu-link {
-  text-decoration: none;
+  text-decoration: underline;
+  transition: 0.4s all;
+}
+
+.menu-link:hover {
+  color: var(--Nav-Gray);
 }
 
 .menu-box__card {
@@ -238,7 +218,6 @@ body {
 
 
 /*ABOUT*/
-
 
 .about {
   margin: 0 auto;
@@ -391,6 +370,7 @@ body {
   max-width: 30rem;
 }
 
+
 /*FOOTER*/
 
 .footer {
@@ -503,6 +483,7 @@ body {
   line-height: 1.3em;
   padding-bottom: 4rem;  
 }
+
 
 /*CONTACT PAGE*/
 
@@ -642,6 +623,7 @@ body {
   background-color:#F2BEC8;
 }
 
+
 /*NAV 2*/
 .menu-navbar {
   padding: 5rem 0 0rem 0;
@@ -669,6 +651,7 @@ body {
   color: var(--Nav-Gray);
 }
   
+
 /* STARTERS PAGE */
 
 .dishes-section {
@@ -810,11 +793,13 @@ body {
   margin-bottom: 2rem;
 }
 
+
 /*MAINS PAGE*/
 
 .item-full {
   grid-column: 1/-1;
 }
+
 
 /*DESSRTS PAGE*/
 .bw {
