@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../media.css">
-  <link rel="stylesheet" href="../navbar.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link rel="stylesheet" href="../files/style.css">
+  <link rel="stylesheet" href="../files/media.css">
+  <link rel="stylesheet" href="../files/navbar.css">
+  <link rel="stylesheet" href="../files/aos.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.jpg">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet"> 
   <title>Chef Select | Menu</title>
 
@@ -40,36 +41,36 @@
 
 <!-- MENU PAGE -->
 <div class="menu-page">
-  <h1 class="menu-main_header">Menu</h1>
-  <p class="menu-main-desc">Fresh and Natural</p>
+  <h1 class="menu-main_header" data-aos="fade-down">Menu</h1>
+  <p class="menu-main-desc" data-aos="fade-up">Fresh and Natural</p>
   <div class="menu-page-starters">
     <div class="menu-box1 soup">
-      <img src="../images/starters-image.png" alt="starters" class="manu-img">
+      <img src="../images/starters-image.png" alt="starters" class="manu-img" data-aos="fade-right">
     </div>
     <div class="menu-box2">
-      <h2 class="menu-header2">Starters</h2>
-      <p class="menu-desc2">Beautifully crafted, ideal to start the party and show what exciting dishes coming next.</p>
-      <div class="menu-button">
+      <h2 class="menu-header2" data-aos="fade-left">Starters</h2>
+      <p class="menu-desc2" data-aos="fade-left">Beautifully crafted, ideal to start the party and show what exciting dishes coming next.</p>
+      <div class="menu-button"  data-aos="fade-left">
         <a href="../pages/menu-folder/starters.html" class="menu-link">See more</a>
       </div>
     </div>
     <div class="menu-box2">
-      <h2 class="menu-header2">Mains</h2>
-      <p class="menu-desc2">The most important part of of the meal, food that impress your friends and family. It aims to please everybody, including vegans and vegetarians.</p>
-      <div class="menu-button">
+      <h2 class="menu-header2" data-aos="fade-down">Mains</h2>
+      <p class="menu-desc2" data-aos="fade-down">The most important part of of the meal, food that impress your friends and family. It aims to please everybody, including vegans and vegetarians.</p>
+      <div class="menu-button" data-aos="fade-down">
         <a href="../pages/menu-folder/mains.html" class="menu-link">See more</a>
       </div>
     </div>
     <div class="menu-box1 avocado">
-      <img src="../images/mains-image.png" alt="starters" class="manu-img">
+      <img src="../images/mains-image.png" alt="starters" class="manu-img" data-aos="fade-up">
     </div>
     <div class="menu-box1 raspberry">
-      <img src="../images/desserts-image.png" alt="starters" class="manu-img">
+      <img src="../images/desserts-image.png" alt="starters" class="manu-img" data-aos="fade-right">
     </div>
     <div class="menu-box2">
-      <h2 class="menu-header2">Desserts</h2>
-      <p class="menu-desc2">These are made to play the main role in making you happy. Fall in love with the best flavours that will speak to all your senses.</p>
-      <div class="menu-button">
+      <h2 class="menu-header2" data-aos="fade-left">Desserts</h2>
+      <p class="menu-desc2" data-aos="fade-left">These are made to play the main role in making you happy. Fall in love with the best flavours that will speak to all your senses.</p>
+      <div class="menu-button" data-aos="fade-left">
         <a href="../pages/menu-folder/desserts.html" class="menu-link">See more</a>
       </div>
     </div>
@@ -89,16 +90,25 @@
   </div>
 </footer>
 
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
+<!-- Mobile navbar-->
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
     }
-  </script>
-  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  }
+</script>
+
+<!-- Other scripts-->
+<script src ="../files/aos.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script>
+  AOS.init({
+      duration: 1200,
+    })
+</script>
 </body>
 </html>

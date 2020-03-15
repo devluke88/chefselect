@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../media.css">
-  <link rel="stylesheet" href="../navbar.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link rel="stylesheet" href="../files/style.css">
+  <link rel="stylesheet" href="../files/media.css">
+  <link rel="stylesheet" href="../files/navbar.css">
+  <link rel="stylesheet" href="../files/aos.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.jpg">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet"> 
   <title>Chef Select | About</title>
 
@@ -40,18 +41,18 @@
 
 <!-- ABOUT PAGE -->
 <div class="about-page">
-  <h1 class="about-h1">About</h1>
-  <p class="about-desc2">He can be hired for any occasion of work in catering, for weddings, receptions, various private parties, plated or buffets, even with live cooking stations, finger food or canapes on a high level of cooking.</p>
+  <h1 class="about-h1" data-aos="fade-right">About</h1>
+  <p class="about-desc2" data-aos="fade-left">He can be hired for any occasion of work in catering, for weddings, receptions, various private parties, plated or buffets, even with live cooking stations, finger food or canapes on a high level of cooking.</p>
   <div class="about-image2">
-    <img src="../images/about_img2.jpg" alt="About Image" class="about-img2">
+    <img src="../images/about_img2.jpg" alt="About Image" class="about-img2" data-aos="fade-up">
   </div>
   <div class="about-box2">
     <div class="about-intro">
-      <h2 class="about-box-h2">Gabriel</h2>
-      <p class="about-box-desc">A chef who cook classic and modern for public. A vast experience in gastronomy, 18 years working in different locations like hotels, restaurants, pubs, bistros, is glad to show his abilities of cooking. This guy would love to show as much as possible his food, to the people, adapting and creating to taste, cooking fresh and trying to offer the best catering services to the public.</p>
+      <h2 class="about-box-h2" data-aos="fade-down">Gabriel</h2>
+      <p class="about-box-desc" data-aos="fade-right">A chef who cook classic and modern for public. A vast experience in gastronomy, 18 years working in different locations like hotels, restaurants, pubs, bistros, is glad to show his abilities of cooking. This guy would love to show as much as possible his food, to the people, adapting and creating to taste, cooking fresh and trying to offer the best catering services to the public.</p>
     </div>
     <div class="about-box-image">
-      <img src="../images/about_img3.jpg" alt="About image three" class="about-img3">
+      <img src="../images/about_img3.jpg" alt="About image three" class="about-img3" data-aos="fade-left">
     </div>
   </div>
 </div>
@@ -69,16 +70,25 @@
   </div>
 </footer>
 
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
+ <!-- Mobile navbar-->
+ <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
     }
-  </script>
-  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  }
+</script>
+
+<!-- Other scripts-->
+<script src ="../files/aos.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script>
+  AOS.init({
+      duration: 1200,
+    })
+</script>
 </body>
 </html>
