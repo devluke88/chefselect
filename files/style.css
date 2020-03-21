@@ -29,6 +29,10 @@ body {
   background-color: var(--Primary-Black);
 }
 
+#wht {
+  color: #fff;
+  padding-top: 6rem;
+}
 
 /*NAV*/
 
@@ -67,11 +71,11 @@ body {
 
 .nav-logo { 
   width: 40px;
-  margin-left: 26px;
+  padding-left: 26px;
 }
 
 .social-icons {
-  margin-right: 26px;
+  padding-right: 26px;
 }
 
 
@@ -809,4 +813,29 @@ body {
 
 #white-col {
   color: #fff;
+}
+
+.contact-det {
+  margin: 0 auto;
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-tel {
+  text-decoration: none;
+  color: var(--Primary-Black);
+  font-weight: 500;
+}
+
+.contact-mail {
+  text-decoration: none;
+  color: var(--Primary-Black);
+  font-weight: 500;
+}
+
+.contact-tel:hover,
+.contact-mail:hover {
+  color: var(--Nav-Gray);
 }
