@@ -93,6 +93,11 @@ body {
     color: var(--Nav-Gray);
   }
 
+  .bar {
+    max-width: 1185px; 
+    margin: 0 auto;
+  }
+
 .nav-container {
   margin: 0 auto;
   width: 100%;
